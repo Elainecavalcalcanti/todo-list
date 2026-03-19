@@ -207,7 +207,7 @@ footer {
     padding: 30px 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.2); 
-    border-radius: 20px 20px 0 0; 
+    border-radius: 10px 20px 0 0; 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -231,11 +231,13 @@ footer p {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-family: 'UT Unisportion Trial', sans-serif;
 }
 
 .footer-links a:hover {
-    color: #00ff88; 
+    color: #f1a310; 
     transform: translateY(-2px);
+
 }
 
 .copyright {
