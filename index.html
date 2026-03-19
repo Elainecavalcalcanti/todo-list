@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>TO DO LIST</h1>
+  </header>
+
+  <main>
+    <section class="form">
+      <input type="text" id="titulo" placeholder="Título" class="input-padrao">
+      <textarea id="description" placeholder="Descrição" class="input-padrao"></textarea>
+
+      <div class="form-footer">
+        <div class="prioridade-container">
+          <span>Prioridade:</span>
+          <div class="opcoes-prioridade">
+            <label><input type="radio" name="prioridade" value="Baixa"> Baixa</label>
+            <label><input type="radio" name="prioridade" value="Média"> Média</label>
+            <label><input type="radio" name="prioridade" value="Alta"> Alta</label>
+          </div>
+        </div>
+        <button id="btnAdicionar">Adicionar</button>
+      </div>
+    </section>
+
+    <section class="lista">
+      <h2>LISTA DE TAREFAS:</h2>
+      
+      <div class="busca-container">
+        <i class="fas fa-search lupa"></i> <input type="text" id="busca" placeholder="Descrição">
+      </div>
+
+      <div id="tarefas" class="grid-tarefas"></div>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

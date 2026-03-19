@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@font-face {
+  font-family: 'UT Unisportion Trial'; /* O nome que você quiser dar */
+  src: url('font/UT\ Unisportion\ Trial.ttf') format('truetype'); /* O caminho do arquivo */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #003956, #0082AC);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+h1 {
+  font-family: 'UT Unisportion Trial', sans-serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  color: #f1a310;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.input-padrao {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  color: #1e3c72;
+  font-family: "Montserrat", sans-serif;
+}
+
+#description {
+  height: 120px;
+  resize: none;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.prioridade-container {
+  background: white;
+  color: #1e3c72;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.opcoes-prioridade {
+  display: flex;
+  gap: 10px;
+}
+
+#btnAdicionar {
+  background: #244b8a;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-family: "Montserrat", sans-serif;
+}
+
+#btnAdicionar:hover { background: #1a3666; }
+
+
+.lista h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.busca-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#busca {
+  width: 100%;
+  padding: 12px 15px 12px 45px; 
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.busca-container .lupa {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2a5298;
+  font-size: 1.1rem;
+}
+
+
+.grid-tarefas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  color: #1e3c72;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  font-family: "Montserrat", sans-serif;
+}
+.card-description {
+  max-width: 100%;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+
+}
+
+
+.card p {
+  max-width: 100%; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+}
+.card h3 { margin-bottom: 8px; font-size: 1.3rem; }
+.card p { font-size: 0.95rem; line-height: 1.4; flex-grow: 1; }
+.card small { font-weight: bold; opacity: 0.8; }
+
+.acoes {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+
+.btn-concluir, .btn-editar, .btn-excluir {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem; 
+  color: #ccc; 
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-concluir:hover { color: #00c853; transform: scale(1.1); }
+.btn-editar:hover { color: #ff9800; transform: scale(1.1); }
+.btn-excluir:hover { color: #ff5252; transform: scale(1.1); }
+
+
+.card.concluida {
+  opacity: 0.6;
+  background: #f0f0f0;
+}
+
+.card.concluida .btn-concluir {
+  color: #00c853; 
+}
+
+@media (max-width: 500px) {
+  .prioridade-container { width: 100%; justify-content: space-between; }
+  #btnAdicionar { width: 100%; }
+}
