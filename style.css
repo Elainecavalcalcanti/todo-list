@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @font-face {
-  font-family: 'UT Unisportion Trial'; /* O nome que você quiser dar */
-  src: url('font/UT\ Unisportion\ Trial.ttf') format('truetype'); /* O caminho do arquivo */
+  font-family: 'UT Unisportion Trial'; 
+  src: url('font/UT\ Unisportion\ Trial.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
 }
